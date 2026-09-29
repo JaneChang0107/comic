@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data:; style-src 'self'; script-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>閱讀</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="reader">
+  <div class="head">
+    <h1 id="title"></h1>
+    <a href="index.html">回到作品一覽</a>
+  </div>
+  <div class="bar">
+    <div class="grp">
+      <button id="left" class="ghost" aria-label="往左翻">‹</button>
+      <span class="count" id="count" aria-live="polite"></span>
+      <button id="right" aria-label="往右翻">›</button>
+    </div>
+    <button id="dir" class="ghost" aria-pressed="false"></button>
+  </div>
+  <div class="stage" id="stage"></div>
+</main>
+<footer id="license"></footer>
+<script src="works.js"></script>
+<script src="reader.js"></script>
+</body>
+</html>
